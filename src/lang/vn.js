@@ -1,3 +1,3 @@
 export default {
-    welcomeMsg: 'Xin Chào'
+    'Hello World': 'Xin Chào Thế Giới'
 };

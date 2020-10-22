@@ -3,7 +3,7 @@
         <v-layout justify-center align-center column pa-5>
             <div
                 class="display-4 font-weight-black white--text text-xs-center"
-                v-text="$t('welcomeMsg')"
+                v-text="$t('Hello World')"
             ></div>
             <div
                 class="display-4 font-weight-black white--text text-xs-center mb-3"
