@@ -12,7 +12,8 @@ export default [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        component: () =>
+            import(/* webpackChunkName: "about" */ '../views/About.vue'),
         meta: {
             authRequired: true
         }
@@ -20,16 +21,19 @@ export default [
     {
         path: '/menu',
         name: 'Menu',
-        component: () => import(/* webpackChunkName: "menu" */ '../views/Menu.vue')
+        component: () =>
+            import(/* webpackChunkName: "menu" */ '../views/Menu.vue')
     },
     {
         path: '/sign-in',
         name: 'Signin',
-        component: () => import(/* webpackChunkName: "sign-in" */ '../views/Signin.vue')
+        component: () =>
+            import(/* webpackChunkName: "sign-in" */ '../views/Signin.vue')
     },
     {
         path: '/join',
         name: 'Join',
-        component: () => import(/* webpackChunkName: "join" */ '../views/Join.vue')
+        component: () =>
+            import(/* webpackChunkName: "join" */ '../views/Join.vue')
     }
 ];

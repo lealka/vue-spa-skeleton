@@ -8,4 +8,4 @@ export default axios.create({
     headers: {
         Authorization: 'Bearer {token}'
     }
-})
+});

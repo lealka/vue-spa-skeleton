@@ -8,30 +8,31 @@
                 key-field="idx"
                 v-slot="{ item }"
             >-->
-                <v-flex xs12 sm6 md6 lg4 v-for="(item, idx) in recipes" :key="idx">
-                    <v-card>
-                        <v-responsive>
-                            <v-img :src="item.recipe.image"></v-img>
-                        </v-responsive>
+            <v-flex xs12 sm6 md6 lg4 v-for="(item, idx) in recipes" :key="idx">
+                <v-card>
+                    <v-responsive>
+                        <v-img :src="item.recipe.image"></v-img>
+                    </v-responsive>
 
-                        <v-card-text>
-                            <div class="title my-5">{{ item.recipe.label }}</div>
+                    <v-card-text>
+                        <div class="title my-5">{{ item.recipe.label }}</div>
 
-                            <div class="subheading">Ingredients</div>
-                            <ul>
-                                <li
-                                    v-for="(ingredient, i) in item.recipe.ingredientLines"
-                                    :key="i"
-                                    v-html="ingredient"
-                                ></li>
-                            </ul>
-                        </v-card-text>
+                        <div class="subheading">Ingredients</div>
+                        <ul>
+                            <li
+                                v-for="(ingredient, i) in item.recipe
+                                    .ingredientLines"
+                                :key="i"
+                                v-html="ingredient"
+                            ></li>
+                        </ul>
+                    </v-card-text>
 
-                        <v-card-actions>
-                            <v-btn color="green" dark>Order</v-btn>
-                        </v-card-actions>
-                    </v-card>
-                </v-flex>
+                    <v-card-actions>
+                        <v-btn color="green" dark>Order</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-flex>
             <!--</RecycleScroller>-->
         </v-layout>
     </v-container>
